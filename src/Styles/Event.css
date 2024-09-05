@@ -1,0 +1,105 @@
+.events-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  .head{
+    color: #4EB8B9;
+    font-style: bold;
+    font-size: 20px;
+  }
+  .events-title {
+    color: #001c55;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .events-cards {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .event-card {
+    background-image: url(../assets/event.png);
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 350px;
+    height: 150px;
+    text-align: left;
+    position: relative;
+  }
+  .event-words{
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 350px;
+    height: 200px;
+    text-align: left;
+    position: relative;
+  }
+  .event-status {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #2ecc71;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .ended {
+    background-color: #1abc9c;
+  }
+  .event-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  h3 {
+    color: #001c55;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #555555;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .read-more {
+    background-color: #1abc9c;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 100px;
+  }
+  .read-more:hover {
+    background-color: #16a085;
+  }
+  
+  @media only screen and (max-width: 880px){
+
+    .events-cards{
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    .events-title {
+      font-size: 20px;
+    }
+    .event-card, .event-words {
+      max-width: 70%;
+      padding: 15px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .events-title {
+      font-size: 18px;
+    }
+  
+    .event-card, .event-words {
+      padding: 15px;
+      max-width: 100%;
+    }
+  }
